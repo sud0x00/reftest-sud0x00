@@ -1,0 +1,39 @@
+/* INSTRUCTIONS
+1) The following questions are based on the test pattern for your exams.
+2) Questions won't be the same but the question pattern/topics will be similar.
+
+WITHOUT FOUR FUNCTIONS
+1. Write a program to find the area of a triangle
+https://onlinegdb.com/_UOCg9Vlu
+
+WITH FOUR FUNCTIONS
+2. Write a program using four functions to find the area of a triangle
+https://onlinegdb.com/ojynwnNjH
+
+STRUCTURES
+3. Write a program using structures and four functions to find the area of a triangle
+https://onlinegdb.com/Zk_bo47AX
+STRUCTURES AND TERNARY OPERATOR
+4. Write a program to find the largest area of three triangles using structures and ternary
+operator using four functions
+https://onlinegdb.com/mTcIQn58d
+CALCULATION OF SERIES
+5. Write a program to calculate Exponential Series , given by -
+e
+x = 1 + x + x2/2! + x3/3!......(,Where x is taken as input from the user).using four functions
+https://onlinegdb.com/mVqWFDb-3C
+
+ARRAYS
+6. Write a program to find the sum of n odd numbers in an array using four functions
+https://onlinegdb.com/jk9nC6R25
+
+STRINGS
+7. Write a program to concatenate two strings using four functions
+
+https://onlinegdb.com/KJ89-P6a8
+ARRAY OF STRUCTURES
+8. Write a program to find the area of n triangles using structures and four functions
+
+https://onlinegdb.com/Yx8oHjDH4
+
+-----------------------------------------------------------------------------------------------------------------------------
