@@ -1,0 +1,136 @@
+Reading symbols from a.out...
+(gdb) run
+Starting program: /home/a.out 
+
+Breakpoint 5, main () at main.c:40
+40          inp();
+(gdb) step
+inp () at main.c:14
+14      {
+(gdb) next
+15          for(int i=0;i<3;i++)
+(gdb) next
+17            printf("\n Enter the height of %d triangle: ", i+1);
+(gdb) next
+
+18            scanf("%f",&t[i].height);
+(gdb) next
+ Enter the height of 1 triangle: 5 
+19            printf("\n Enter the base of %d triangle: ", i+1);
+(gdb) next
+
+20            scanf("%f",&t[i].base);
+(gdb) next
+21            printf("\n");
+(gdb) next
+ Enter the base of 1 triangle: 6 
+15          for(int i=0;i<3;i++)
+(gdb) next
+17            printf("\n Enter the height of %d triangle: ", i+1);
+(gdb) next
+
+18            scanf("%f",&t[i].height);
+(gdb) next
+19            printf("\n Enter the base of %d triangle: ", i+1);
+(gdb) next
+ Enter the height of 2 triangle: 7 
+20            scanf("%f",&t[i].base);
+(gdb) next
+21            printf("\n");
+(gdb) next
+ Enter the base of 2 triangle: 8   
+15          for(int i=0;i<3;i++)
+(gdb) next
+17            printf("\n Enter the height of %d triangle: ", i+1);
+(gdb) next
+
+18            scanf("%f",&t[i].height);
+(gdb) next
+19            printf("\n Enter the base of %d triangle: ", i+1);
+(gdb) next
+ Enter the height of 3 triangle: 4 
+20            scanf("%f",&t[i].base);
+(gdb) next
+21            printf("\n");
+(gdb) next
+ Enter the base of 3 triangle: 3
+15          for(int i=0;i<3;i++)
+(gdb) next
+23      }
+(gdb) next
+
+Breakpoint 4, main () at main.c:42
+42          for(int i=0;i<3;i++)
+(gdb) next
+44            a[i] = findarea(t[i].height , t[i].base);
+(gdb) step
+findarea (height=3.0611365e-41, base=1.4659427e+13) at main.c:9
+9       {
+(gdb) next
+10        float a = 0.5 * height * base;
+(gdb) next
+11        return a;
+(gdb) next
+12      }
+(gdb) next
+main () at main.c:42
+42          for(int i=0;i<3;i++)
+(gdb) next
+44            a[i] = findarea(t[i].height , t[i].base);
+(gdb) next
+42          for(int i=0;i<3;i++)
+(gdb) continue
+Continuing.
+
+Breakpoint 3, main () at main.c:46
+46          op1(a);
+(gdb) step
+op1 (b=0x4080000040400000) at main.c:25
+25      {
+(gdb) next
+26          for(int i=0; i<3; i++)
+(gdb) next
+28             printf("area of triangle %d = %f \n", i+1,b[i]);
+(gdb) next
+area of triangle 1 = 15.000000 
+26          for(int i=0; i<3; i++)
+(gdb) next
+28             printf("area of triangle %d = %f \n", i+1,b[i]);
+(gdb) p b[i]
+$1 = 28
+(gdb) p b[0]
+$2 = 15
+(gdb) p b[1]
+$3 = 28
+(gdb) p b[2]
+$4 = 6
+(gdb) next
+area of triangle 2 = 28.000000 
+26          for(int i=0; i<3; i++)
+(gdb) next
+28             printf("area of triangle %d = %f \n", i+1,b[i]);
+(gdb) next
+area of triangle 3 = 6.000000 
+26          for(int i=0; i<3; i++)
+(gdb) next
+30      }
+(gdb) next
+
+Breakpoint 2, main () at main.c:47
+47          op2(a);
+(gdb) step
+op2 (c=0x7fffffffebcc) at main.c:32
+32      {
+(gdb) next
+34          largest = ( (c[0]>c[1]&&c[0]>c[2]) ? c[0] : c[1]>c[2]?c[1]:c[2] );
+(gdb) next
+35          printf("The largest area of triangle is : %.2f ",largest);
+(gdb) next
+36      }
+(gdb) next
+
+Breakpoint 1, main () at main.c:48
+48          return 0;
+(gdb) next
+49      }  
+(gdb) Quit
