@@ -1,0 +1,27 @@
+Reading symbols from a.out...
+(gdb) run
+Starting program: /home/a.out 
+
+Breakpoint 5, main () at main.c:5
+5         printf("Enter length of base and height");
+(gdb) next
+
+Breakpoint 4, main () at main.c:6
+6         scanf("%f%f",&base,&height);
+(gdb) next
+Enter length of base and height 4 3 
+
+Breakpoint 3, main () at main.c:7
+7         area = 0.5*base*height;
+(gdb) next
+
+Breakpoint 2, main () at main.c:8
+8         printf("Area of the given triangle is %.5f",area);
+(gdb) p area
+$1 = 6
+(gdb) next
+
+Breakpoint 1, main () at main.c:9
+9         return 0;
+
+(gdb) Quit
