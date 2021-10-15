@@ -1,9 +1,10 @@
 #include<stdio.h>
-void main()
+int main()
 {
-  float base , height , Area;
+  float base , height , area;
   printf("Enter length of base and height");
   scanf("%f%f",&base,&height);
-  Area = 0.5*base*height;
-  printf("Area of the given triangle is %.5f",Area);
+  area = 0.5*base*height;
+  printf("Area of the given triangle is %.5f",area);
+  return 0;
 }
