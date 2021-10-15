@@ -1,0 +1,75 @@
+Reading symbols from a.out...
+(gdb) run
+Starting program: /home/a.out 
+
+Breakpoint 5, main () at main.c:29
+29        float h1 = height();
+(gdb) step
+height () at main.c:10
+10      {
+(gdb) next
+12        printf("\n Enter the size of the height");
+(gdb) next
+
+13        scanf("%f",&w);
+(gdb) next
+ Enter the size of the height 4
+14        return w;
+(gdb) next
+15      }
+(gdb) next
+
+Breakpoint 4, main () at main.c:30
+30        float b1 = base();
+(gdb) step
+base () at main.c:3
+3       {
+(gdb) next
+5         printf("\n Enter the size of the base");
+(gdb) next
+
+6         scanf("%f",&q);
+(gdb) next
+ Enter the size of the base 3
+7         return q;
+(gdb) next
+8       }
+(gdb) next
+
+Breakpoint 3, main () at main.c:31
+31        float a = area(h1,b1);
+(gdb) step
+area (hx=3.0611365e-41, bx=1.46592068e+13) at main.c:17
+17      {
+(gdb) next
+19        ax = 0.5*hx*bx;
+(gdb) next
+20        return ax;
+(gdb) p ax
+$1 = 6
+(gdb) next
+21      }
+(gdb) next
+
+Breakpoint 2, main () at main.c:32
+32        print(a);
+(gdb) step
+print (ay=6) at main.c:23
+23      {
+(gdb) next
+24         printf("\n Area of triangle is = %.5f",ay);
+(gdb) next
+
+25        return 0;
+(gdb) p ay
+$2 = 6
+(gdb) next
+26      }
+(gdb) next
+
+Breakpoint 1, main () at main.c:33
+33        return 0;
+(gdb) next
+34      }
+
+(gdb) Quit
